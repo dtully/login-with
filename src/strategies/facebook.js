@@ -8,7 +8,7 @@ module.exports = {
         clientID,
         clientSecret,
         callbackURL,
-        profileFields: ['displayName', 'name', 'photos']
+        profileFields: ['displayName', 'name', 'photos', 'email' ]
       }
     }
   },
@@ -28,6 +28,7 @@ module.exports = {
       refreshToken,
       profile: {
         id: profile.id,
+        email: profile.email,
         username: profile.displayName,
         provider: 'facebook',
         name,

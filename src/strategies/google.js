@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   preHook: (req, opts) => {
-    opts.scope = ['profile']
+    opts.scope = ['profile', 'email' ]
   },
   toUser: (accessToken, refreshToken, profile, done) => {
     const {id, displayName, photos = []} = profile
