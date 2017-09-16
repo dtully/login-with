@@ -29,7 +29,7 @@ module.exports = {
       refreshToken,
       profile: {
         id: profile.id,
-        email: profile.email,
+        email: profile.emails && profile.emails[0] ? profile.emails[0].value : null,
         username: profile.displayName,
         provider: 'facebook',
         name,
