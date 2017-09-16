@@ -12,11 +12,12 @@ module.exports = {
     }
   },
   toUser: (token, tokenSecret, profile, done) => {
-    const {photos, provider, username, displayName} = profile
+    const {id, photos, provider, username, displayName} = profile
     done(null, {
       token,
       tokenSecret,
       profile: {
+        id,
         username,
         provider,
         photo: photos[0].value,

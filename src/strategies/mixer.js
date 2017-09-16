@@ -17,6 +17,7 @@ module.exports = {
       accessToken,
       refreshToken,
       profile: {
+        id: profile.id,
         username: profile.username,
         photo: profile._raw.avatarUrl,
         provider: 'mixer'

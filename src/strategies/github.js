@@ -16,11 +16,12 @@ module.exports = {
     try {
       avatar = JSON.parse(profile._raw).avatar_url
     } catch (error) {}
-    const {username, displayName} = profile
+    const {id, username, displayName} = profile
     done(null, {
       accessToken,
       refreshToken,
       profile: {
+        id,
         username,
         name: displayName,
         provider: 'github',

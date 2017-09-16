@@ -27,6 +27,7 @@ module.exports = {
       accessToken,
       refreshToken,
       profile: {
+        id: profile.id,
         username: profile.displayName,
         provider: 'linkedin',
         name,

@@ -15,11 +15,12 @@ module.exports = {
     opts.scope = ['profile']
   },
   toUser: (accessToken, refreshToken, profile, done) => {
-    const {displayName, photos = []} = profile
+    const {id, displayName, photos = []} = profile
     done(null, {
       accessToken,
       refreshToken,
       profile: {
+        id,
         username: displayName,
         name: displayName,
         provider: 'google',

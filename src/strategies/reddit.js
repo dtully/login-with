@@ -16,6 +16,7 @@ module.exports = {
       accessToken,
       refreshToken,
       profile: {
+        id: profile.id,
         username: profile.name,
         provider: 'reddit'
       }
