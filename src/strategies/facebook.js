@@ -8,7 +8,8 @@ module.exports = {
         clientID,
         clientSecret,
         callbackURL,
-        profileFields: ['displayName', 'name', 'photos', 'email' ]
+        profileFields: ['displayName', 'name', 'photos', 'email' ],
+        scope: [ 'public_profile', 'email' ]
       }
     }
   },
